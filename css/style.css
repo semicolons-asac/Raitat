@@ -1,1 +1,94 @@
 /* main styles -> header and footer  */
+body{
+    margin-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Yusei Magic', sans-serif;
+
+
+}
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .navContent{
+      margin-left: 40%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.time{
+    margin-top: -33px;
+    color: white;
+}
+
+.logo{
+    height: 250px;
+    margin-left: 35%;
+    margin-top: 25px;
+}
+.brkLine{
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+.logoIcons{
+    color: #030303;
+    text-align: center;
+    font-size: xxx-large;
+}
+i{
+    margin-right: 60px;
+}
+
+
+.box{
+ background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(105, 105, 105);
+  padding: 50px;
+  margin: 20px;
+}
+
+.boxTitle{
+    color: rgb(40, 133, 170);
+    margin-top: -43px;
+    text-align: center;
+}
+
+footer{
+    background-color:rgb(40, 133, 170);
+    color: #ffffff;
+    height: 200px;
+    width: 100%;
+}
+.fTitle{
+    margin-top: -43px;
+    text-align: center;
+}
+.footerIcons{
+    color: #ffffff;
+    text-align: center;
+    font-size: xxx-large;
+}
+.infoBy{
+    margin-top: 45px;
+    text-align: center;
+}
