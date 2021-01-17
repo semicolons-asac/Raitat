@@ -1,0 +1,12 @@
+header{background-color: black;color: white;}
+header nav {display: inline; }
+ul.rhight{
+    text-align: right;
+  }
+header nav ul li {display: inline;margin-left: 30px;margin-right: 80px;    vertical-align:bottom;
+}
+
+nav{margin-top: 5%;}
+a {text-decoration: none; color: white; }
+h1{font-size: 400%;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin: 10px;}
+img{width: 180px;height: 190px;float: left;}
