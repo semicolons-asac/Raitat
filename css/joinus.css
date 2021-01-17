@@ -29,6 +29,9 @@ h3{
 fieldset {
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 60px;
+
+    
 }
 
 .joinForm{
@@ -58,4 +61,25 @@ textarea{
     
     width: 200px;
     height: 20px;
+}
+
+
+footer{
+    background-color:rgb(40, 133, 170);
+    color: #ffffff;
+    height: 200px;
+   
+}
+.fTitle{
+    margin-top: -43px;
+    text-align: center;
+}
+.footerIcons{
+    color: #ffffff;
+    text-align: center;
+    font-size: xxx-large;
+}
+.infoBy{
+    margin-top: 45px;
+    text-align: center;
 }
