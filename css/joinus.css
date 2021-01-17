@@ -1,0 +1,21 @@
+.img1{
+    width: 200px;
+}
+.par{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.sdiv{
+    color: rgb(109, 199, 241);
+}
+.joinForm{
+    
+}
+.sButton{
+    background-color: skyblue;
+    color: white;
+    border: 0px;
+    width: 200px;
+    height: 20px;
+}
