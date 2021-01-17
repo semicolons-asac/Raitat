@@ -1,0 +1,51 @@
+body{
+    margin-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Yusei Magic', sans-serif;
+
+}
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+    padding-left: 75px;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .textstyle{
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: x-large;
+  }
+
+  button{
+    display: inline-block;
+    background-color: #f1e8e8; 
+    background-color: #f1e8e8; 
+    border: rgb(61, 59, 59) solid;
+    color: rgb(7, 5, 5);
+    font-family: fantasy;  
+    font-size: medium;
+    cursor: pointer;
+    margin-right: 50px;
+    justify-content: space-around;
+    
+}
+
