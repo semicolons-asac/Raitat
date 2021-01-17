@@ -1,5 +1,46 @@
 
 
+  body{
+    margin-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Yusei Magic', sans-serif;
+
+
+}
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .navContent{
+      margin-left: 40%;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.time{
+    margin-top: -33px;
+    color: white;
+}
+  
+  
   .column {
     float: left;
     width: 33.33%;
@@ -14,10 +55,52 @@
 
   .row {
     display: flex;
+    padding-left: 25px;
   }
   
   .column {
     flex: 33.33%;
     padding: 5px;
   }
+
+  .textstyle{
+      padding-top: 30px;
+      padding-bottom: 15px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: x-large;
+  }
+
+  button{
+    display: inline-block;
+    background-color: #f1e8e8; 
+    background-color: #f1e8e8; 
+    border: salmon solid;
+    color: rgb(7, 5, 5);
+    font-family: fantasy;  
+    font-size: medium;
+    cursor: pointer;
+    margin-right: 50px;
+    justify-content: space-around;
+    
+}
+
+footer{
+    background-color:rgb(40, 133, 170);
+    color: #ffffff;
+    height: 100px;
+    width: 100%;
+}
+.fTitle{
+    margin-top: -43px;
+    text-align: center;
+}
+.footerIcons{
+    color: #ffffff;
+    text-align: center;
+    font-size: xxx-large;
+}
+.infoBy{
+    margin-top: 45px;
+    text-align: center;
+}
   
