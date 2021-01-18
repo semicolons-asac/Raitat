@@ -20,5 +20,14 @@
 * each resturant shold have his own location on the map
 * the website must show the top rates 
 * the website must have a contact form in case if any new client  need to join to our website
-
 * the web site must have an adv areas
+
+# Project: Prep #4
+>*pages wireframe's :*
+# ![](img/home.JPG)
+# ![](img/about-us.JPG)
+# ![](img/rate.png)
+# ![](img/join-us.png)
+#
+
+
