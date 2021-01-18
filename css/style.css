@@ -17,10 +17,12 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
+    font-size: 25px;
     
   }
   .navContent{
-      margin-left: 40%;
+      margin-left: 350px;
+    
   }
   
   li {
@@ -89,7 +91,7 @@ footer{
 .footerIcons{
     color: #ffffff;
     text-align: center;
-    font-size: xxx-large;
+    font-size: x-large;
 }
 .infoBy{
     margin-top: 45px;
