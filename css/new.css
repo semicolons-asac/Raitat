@@ -1,83 +1,8 @@
-/* body{
-    margin-top: 0px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: 'Yusei Magic', sans-serif;
-
-} */
-
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .row {
-    display: flex;
-    padding-left: 75px;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-  }
-
-  .textstyle{
-      padding-top: 20px;
-      padding-bottom: 15px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: x-large;
-  }
-
- 
-
-.rate {
-  float: left;
-  height: 46px;
-  padding: 0 10px;
-}
-.rate:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
-}
-.rate:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:30px;
-  color:#ccc;
-}
-.rate:not(:checked) > label:before {
-  content: '★ ';
-}
-.rate > input:checked ~ label {
-  color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-  color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-  color: #c59b08;
-}
 
 
-/* new */
 .container{
   position: relative;
-  background:#000000;
+  background: #111;
   padding: 20px 30px;
   border: 1px solid #444;
   border-radius: 5px;
@@ -113,7 +38,7 @@
 }
 .star-widget label{
   font-size: 40px;
-  color: #cccccc6e;
+  color: #444;
   padding: 10px;
   float: right;
   transition: all 0.2s ease;
@@ -188,8 +113,8 @@ form .btn button{
   width: 100%;
   border: 1px solid #444;
   outline: none;
-  background:rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: #222;
+  color: #999;
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
@@ -197,5 +122,5 @@ form .btn button{
   transition: all 0.3s ease;
 }
 form .btn button:hover{
-  background: #fd4;
+  background: #1b1b1b;
 }
