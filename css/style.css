@@ -21,12 +21,12 @@ body{
     
   }
   .navContent{
-      margin-left: 350px;
+    text-align: center;
     
   }
   
   li {
-    float: left;
+    display: inline-block;
   }
   
   li a {
@@ -47,8 +47,8 @@ body{
 
 .logo{
     height: 250px;
-    margin-left: 35%;
-    margin-top: 25px;
+    margin: 0 auto;
+    display: block;
 }
 .brkLine{
     height: 10px;
@@ -70,12 +70,14 @@ i{
   border: 1px solid rgb(105, 105, 105);
   padding: 50px;
   margin: 20px;
+  text-align: center;
 }
 
 .boxTitle{
     color: rgb(40, 133, 170);
-    margin-top: -43px;
+    /* margin-top: -43px; */
     text-align: center;
+    font-size: -webkit-xxx-large;
 }
 
 footer{
@@ -85,15 +87,20 @@ footer{
     width: 100%;
 }
 .fTitle{
-    margin-top: -43px;
+    font-size: -webkit-xxx-large;
     text-align: center;
 }
 .footerIcons{
     color: #ffffff;
     text-align: center;
     font-size: x-large;
+    padding-top: 61px;
 }
 .infoBy{
     margin-top: 45px;
     text-align: center;
+}
+.catImg{
+    width: 400px;
+    height: 250px;
 }
