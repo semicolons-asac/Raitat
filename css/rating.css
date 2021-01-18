@@ -73,4 +73,25 @@ body{
   color: #c59b08;
 }
 
+.images , .locations {
+  width: 300px;
+  height: 150px;
+  border: 15px solid rgb(81, 148, 236);
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+  display: inline-flex;
+}
+
+.rating , .descriptions {
+  width: 300px;
+  height: 150px;
+  border: 15px solid rgb(81, 148, 236);
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+ display: inline-flex;
+  
+}
+
 
