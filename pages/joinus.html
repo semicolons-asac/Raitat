@@ -47,13 +47,22 @@
         <section>
             <fieldset>
                 <!-- <legend></legend> -->
-                <form class="joinForm" action="">
+                <form class="joinForm" action="" id="addnewresturent">
 
                     <input placeholder="Resturant Name" type="text" name="" id="">
 
                     <input placeholder="Resturant Location" type="text" name="" id="">
-                    <br>
 
+                    <br>
+                    <label for="categury">Choose a Resturant categury:</label>
+                    <select id="resturentcategory" name="resturentcategory">
+                        <option value="shawarma">Shawarma</option>
+                        <option value="burger">Burger</option>
+                        <option value="khaliji">Khaliji</option>
+                        <option value="pizza">Pizza</option>
+                    </select>
+                    <br>
+                    <br>
                     <input placeholder="Phone" type="text" name="" id="">
 
                     <input placeholder="E-Mail" type="text" name="" id="">
@@ -78,7 +87,7 @@
         </div>
 
         <h6 class="infoBy"> All Rights Recived 2021 - By Semicolons</h6>
-
+        <script src="/js/app.js"></script>
     </footer>
 </body>
 
