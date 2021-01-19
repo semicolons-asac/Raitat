@@ -19,6 +19,7 @@ article{
     max-width: 100%;color: white;
     height: fit-content;
     font-size: larger;
+    line-height: 1.7;
 }
  div img{
    float: left;
