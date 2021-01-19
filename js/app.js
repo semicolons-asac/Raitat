@@ -109,59 +109,81 @@ function checkAndRestore() {
 
 // checkAndRestore();
 
-var shawarmadiv = document.getElementById("shawarmaPage");
-shawarmadiv.addEventListener('click', function () {
-    //Redirect
 
+//
+var shawarmadiv = document.getElementById("shawarmaPage");
+shawarmadiv.addEventListener('click', function (event) {
     var getDiv = document.getElementById("shawrmarender");
     for (var index = 0; index < arrayShawarma.length; index++) {
-
-        var titel = document.getElementById("title");
-        var titel = document.createElement("h1");
-
-        titel.textContent = arrayShawarma[index].name;
-
-        getDiv.appendChild(titel);
+        var div1 = document.createElement("div");
+        div1.setAttribute('class', 'row');
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayShawarma[index].name + "</h1><a href='pages/rate.html'><img id="+arrayShawarma[index].img+" src='/img/" + arrayShawarma[index].img + "' width='405' height='200'></a></div>";
+        getDiv.appendChild(div1);
 
     }
 });
+var getDiv = document.getElementById("shawrmarender");
+getDiv.addEventListener('click', function (event){
+    // console.log(event.target.id);
+    for(var i=0;i<arrayofRest.length;i++){
+        if(arrayofRest[i].img===event.target.id){
+                // console.log(arrayofRest[i]);
+                localStorage.setItem("last", JSON.stringify(arrayofRest[i]));
+        }
+    }
 
-
+});
+//
+// 
 var burgerdiv = document.getElementById("burgerPage");
-burgerdiv.addEventListener('click', function () {
-
-
+burgerdiv.addEventListener('click', function (event) {
     var getDiv = document.getElementById("burgerrender");
     for (var index = 0; index < arrayBurger.length; index++) {
-
-        var titel = document.getElementById("title");
-        var titel = document.createElement("h1");
-
-        titel.textContent = arrayBurger[index].name;
-
-        getDiv.appendChild(titel);
+        var div1 = document.createElement("div");
+        div1.setAttribute('class', 'row');
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayBurger[index].name + "</h1><a href='pages/rate.html'><img id="+arrayBurger[index].img+" src='/img/" + arrayBurger[index].img + "' width='405' height='200'></a></div>";
+        getDiv.appendChild(div1);
 
     }
 });
+var getDiv = document.getElementById("burgerrender");
+getDiv.addEventListener('click', function (event){
+    // console.log(event.target.id);
+    for(var i=0;i<arrayofRest.length;i++){
+        if(arrayofRest[i].img===event.target.id){
+                // console.log(arrayofRest[i]);
+                localStorage.setItem("last", JSON.stringify(arrayofRest[i]));
+        }
+    }
 
+});
+
+// 
+// 
 var pizzadiv = document.getElementById("pizzaPage");
-pizzadiv.addEventListener('click', function () {
-
-
+pizzadiv.addEventListener('click', function (event) {
     var getDiv = document.getElementById("pizzarender");
     for (var index = 0; index < arrayPizza.length; index++) {
-
-        var titel = document.getElementById("title");
-        var titel = document.createElement("h1");
-
-        titel.textContent = arrayPizza[index].name;
-
-        getDiv.appendChild(titel);
+        var div1 = document.createElement("div");
+        div1.setAttribute('class', 'row');
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayPizza[index].name + "</h1><a href='pages/rate.html'><img id="+arrayPizza[index].img+" src='/img/" + arrayPizza[index].img + "' width='405' height='200'></a></div>";
+        getDiv.appendChild(div1);
 
     }
 });
+var getDiv = document.getElementById("pizzarender");
+getDiv.addEventListener('click', function (event){
+    // console.log(event.target.id);
+    for(var i=0;i<arrayofRest.length;i++){
+        if(arrayofRest[i].img===event.target.id){
+                // console.log(arrayofRest[i]);
+                localStorage.setItem("last", JSON.stringify(arrayofRest[i]));
+        }
+    }
 
-
+});
+// 
+// 
 var khalijidiv = document.getElementById("khaligiPage");
 khalijidiv.addEventListener('click', function (event) {
     var getDiv = document.getElementById("khalijirender");
@@ -184,7 +206,13 @@ getDiv.addEventListener('click', function (event){
     }
 
 });
-
+// 
 
 
 //Rate
+
+// 
+// 
+// https://www.w3.org/WAI/tutorials/forms/custom-controls/
+// 
+// 
