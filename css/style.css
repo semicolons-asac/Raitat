@@ -119,4 +119,6 @@ footer{
 .catImg:hover{
     border-radius:50%;
 }
-/* catogary inline */
+.holder{
+    text-align: -webkit-center;
+}
