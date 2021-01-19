@@ -18,6 +18,7 @@ var arrayBurger = [];
 var arrayShawarma = [];
 var arrayPizza = [];
 var arrayKhaliji = [];
+var arrayofRest=[];
 
 // creat a constructer
 function Resturent(name, categury, img) {
@@ -26,6 +27,7 @@ function Resturent(name, categury, img) {
     this.img = img;
     this.totalstars = 0;
     this.numUser = 0;
+    arrayofRest.push(this);
 
     // totalstars represents:
 
@@ -161,14 +163,28 @@ pizzadiv.addEventListener('click', function () {
 
 
 var khalijidiv = document.getElementById("khaligiPage");
-khalijidiv.addEventListener('click', function () {
+khalijidiv.addEventListener('click', function (event) {
     var getDiv = document.getElementById("khalijirender");
     for (var index = 0; index < arrayKhaliji.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
-        div1.innerHTML = "<div class='column'><h1 class='textstyle'>" + arrayKhaliji[index].name + "</h1><img src='/img/" + arrayKhaliji[index].img + "' width='405' height='200'></div>";
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayKhaliji[index].name + "</h1><a href='pages/rate.html'><img id="+arrayKhaliji[index].img+" src='/img/" + arrayKhaliji[index].img + "' width='405' height='200'></a></div>";
         getDiv.appendChild(div1);
+
     }
 });
+var getDiv = document.getElementById("khalijirender");
+getDiv.addEventListener('click', function (event){
+    // console.log(event.target.id);
+    for(var i=0;i<arrayofRest.length;i++){
+        if(arrayofRest[i].img===event.target.id){
+                // console.log(arrayofRest[i]);
+                localStorage.setItem("last", JSON.stringify(arrayofRest[i]));
+        }
+    }
+
+});
+
+
 
 //Rate
