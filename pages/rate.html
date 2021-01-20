@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/map.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/rating.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,13 +15,14 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Raitat</title>
 </head>
-<nav>
-    <div class="navBar">
-        <div class="navContent">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="pages/aboutus.html">About Us</a></li>
-            <li><a href="pages/joinus.html">Join Us</a></li>
-        </div>
+<nav class="navBar">
+    <img class="logo" src="../img/logo1.png">
+
+    <div class="navContent">
+
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="pages/aboutus.html">About Us</a></li>
+        <li><a href="pages/joinus.html">Join Us</a></li>
     </div>
 </nav>
 
@@ -94,15 +96,40 @@
         <output></output>
     </form>
     <br><br><br><br>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get Directions </button>
+    <!-- map start -->
+    <div id="id01" class="modal">
 
-    <!--  -->
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container1">
+                <div id="map">
+
+
+                </div>
+            </div>
+
+            <div class="container1" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+
+            </div>
+        </form>
+    </div>
+    <!-- map end -->
+
 
 </div>
 
 
     <br>
     <br>
-    <footer>
+    <footer class="footer">
         <h1 class="fTitle">Raitat</h1>
         <div class="footerIcons">
             <i class="fa fa-whatsapp" aria-hidden="true"></i>
@@ -114,6 +141,17 @@
         <h6 class="infoBy"> All Rights Recived 2021 - By Semicolons</h6>
         <script src="../js/app2.js"></script>
         <script src="../js/app.js"></script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
     </footer>
 </body>
