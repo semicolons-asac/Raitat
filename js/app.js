@@ -117,7 +117,7 @@ shawarmadiv.addEventListener('click', function (event) {
     for (var index = 0; index < arrayShawarma.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
-        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayShawarma[index].name + "</h1><a href='pages/rate.html'><img id="+arrayShawarma[index].img+" src='/img/" + arrayShawarma[index].img + "' width='405' height='200'></a></div>";
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayShawarma[index].name + "</h1><a href='pages/rate.html'><img class='ras-img' id="+arrayShawarma[index].img+" src='/img/" + arrayShawarma[index].img + "' width='405' height='200'></a></div>";
         getDiv.appendChild(div1);
 
     }
@@ -141,7 +141,7 @@ burgerdiv.addEventListener('click', function (event) {
     for (var index = 0; index < arrayBurger.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
-        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayBurger[index].name + "</h1><a href='pages/rate.html'><img id="+arrayBurger[index].img+" src='/img/" + arrayBurger[index].img + "' width='405' height='200'></a></div>";
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayBurger[index].name + "</h1><a href='pages/rate.html'><img class='ras-img' id="+arrayBurger[index].img+" src='/img/" + arrayBurger[index].img + "' width='405' height='200'></a></div>";
         getDiv.appendChild(div1);
 
     }
@@ -166,7 +166,7 @@ pizzadiv.addEventListener('click', function (event) {
     for (var index = 0; index < arrayPizza.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
-        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayPizza[index].name + "</h1><a href='pages/rate.html'><img id="+arrayPizza[index].img+" src='/img/" + arrayPizza[index].img + "' width='405' height='200'></a></div>";
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayPizza[index].name + "</h1><a href='pages/rate.html'><img class='ras-img' id="+arrayPizza[index].img+" src='/img/" + arrayPizza[index].img + "' width='405' height='200'></a></div>";
         getDiv.appendChild(div1);
 
     }
@@ -190,7 +190,7 @@ khalijidiv.addEventListener('click', function (event) {
     for (var index = 0; index < arrayKhaliji.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
-        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayKhaliji[index].name + "</h1><a href='pages/rate.html'><img id="+arrayKhaliji[index].img+" src='/img/" + arrayKhaliji[index].img + "' width='405' height='200'></a></div>";
+        div1.innerHTML = "<div  class='column'><h1 class='textstyle'>" + arrayKhaliji[index].name + "</h1><a href='pages/rate.html'><img class='ras-img' id="+arrayKhaliji[index].img+" src='/img/" + arrayKhaliji[index].img + "' width='405' height='200'></a></div>";
         getDiv.appendChild(div1);
 
     }

@@ -20,7 +20,7 @@
 
   .row {
     display: flex;
-    padding-left: 75px;
+    /* padding-left: 75px; */
   }
   
   .column {
@@ -198,4 +198,15 @@ form .btn button{
 }
 form .btn button:hover{
   background: #fd4;
+}
+
+.ras-img{
+  width: 266px;
+  height: 266px;
+  border-radius: 10%;
+  transition:all 0.5s ease;
+}
+.ras-img:hover{
+  border-radius:50%;
+}
 }
