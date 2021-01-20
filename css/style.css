@@ -222,3 +222,13 @@ i{
 .fadeIn-right{
   left: 80%;
 }
+.textstyle{
+  
+    left: 30%;
+    width: fit-content;
+    top: -15px;
+    padding: 20px;
+    background-color: #c86565d4;
+    color: white;
+    border-radius: 0 50px 0 20px;
+}
