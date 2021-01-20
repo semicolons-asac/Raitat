@@ -115,7 +115,8 @@ function checkAndRestore() {
 //
 var shawarmadiv = document.getElementById("shawarmaPage");
 shawarmadiv.addEventListener('click', function (event) {
-    var getDiv = document.getElementById("shawrmarender");
+    var getDiv = document.getElementById("render");
+    getDiv.innerHTML = '';
     for (var index = 0; index < arrayShawarma.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
@@ -124,8 +125,10 @@ shawarmadiv.addEventListener('click', function (event) {
 
     }
 });
-var getDiv = document.getElementById("shawrmarender");
-getDiv.addEventListener('click', function (event) {
+
+var getDiv = document.getElementById("render");
+getDiv.addEventListener('click', function (event){
+
     // console.log(event.target.id);
     for (var i = 0; i < arrayofRest.length; i++) {
         if (arrayofRest[i].img === event.target.id) {
@@ -139,7 +142,8 @@ getDiv.addEventListener('click', function (event) {
 // 
 var burgerdiv = document.getElementById("burgerPage");
 burgerdiv.addEventListener('click', function (event) {
-    var getDiv = document.getElementById("burgerrender");
+    var getDiv = document.getElementById("render");
+    getDiv.innerHTML = '';
     for (var index = 0; index < arrayBurger.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
@@ -148,8 +152,10 @@ burgerdiv.addEventListener('click', function (event) {
 
     }
 });
-var getDiv = document.getElementById("burgerrender");
-getDiv.addEventListener('click', function (event) {
+
+var getDiv = document.getElementById("render");
+getDiv.addEventListener('click', function (event){
+
     // console.log(event.target.id);
     for (var i = 0; i < arrayofRest.length; i++) {
         if (arrayofRest[i].img === event.target.id) {
@@ -164,7 +170,8 @@ getDiv.addEventListener('click', function (event) {
 // 
 var pizzadiv = document.getElementById("pizzaPage");
 pizzadiv.addEventListener('click', function (event) {
-    var getDiv = document.getElementById("pizzarender");
+    var getDiv = document.getElementById("render");
+    getDiv.innerHTML = '';
     for (var index = 0; index < arrayPizza.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
@@ -173,8 +180,10 @@ pizzadiv.addEventListener('click', function (event) {
 
     }
 });
-var getDiv = document.getElementById("pizzarender");
-getDiv.addEventListener('click', function (event) {
+
+var getDiv = document.getElementById("render");
+getDiv.addEventListener('click', function (event){
+
     // console.log(event.target.id);
     for (var i = 0; i < arrayofRest.length; i++) {
         if (arrayofRest[i].img === event.target.id) {
@@ -188,7 +197,8 @@ getDiv.addEventListener('click', function (event) {
 // 
 var khalijidiv = document.getElementById("khaligiPage");
 khalijidiv.addEventListener('click', function (event) {
-    var getDiv = document.getElementById("khalijirender");
+    var getDiv = document.getElementById("render");
+    getDiv.innerHTML = '';
     for (var index = 0; index < arrayKhaliji.length; index++) {
         var div1 = document.createElement("div");
         div1.setAttribute('class', 'row');
@@ -197,8 +207,10 @@ khalijidiv.addEventListener('click', function (event) {
 
     }
 });
-var getDiv = document.getElementById("khalijirender");
-getDiv.addEventListener('click', function (event) {
+
+var getDiv = document.getElementById("render");
+getDiv.addEventListener('click', function (event){
+
     // console.log(event.target.id);
     for (var i = 0; i < arrayofRest.length; i++) {
         if (arrayofRest[i].img === event.target.id) {
