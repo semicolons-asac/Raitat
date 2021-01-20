@@ -216,3 +216,14 @@ getDiv.addEventListener('click', function (event){
 // https://www.w3.org/WAI/tutorials/forms/custom-controls/
 // 
 // 
+////add a new resturent function>>> joinus.html  
+//
+
+// var addnewResturent = document.getElementById('addnewresturent');
+// addnewResturent.addEventListener('submit', function (event) {
+// //   var newtotal = 0;
+//   event.preventDefault();
+//   var newResturentname = event.target.Resturent.value;
+//   var newCtegury =Resturent(event.target.resturentcategory.value);
+  
+//   var newResturent = new Resturent(newResturentname,newCtegury );});
