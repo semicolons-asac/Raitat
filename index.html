@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/rating.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
     <title>Raitat</title>
 </head>
-<nav>
-    
-    <div class="navBar">
+
+
+<body class="body-home">
+    <nav class="navBar">
         <img class="logo" src="img/logo1.png">
 
         <div class="navContent">
@@ -22,18 +27,17 @@
             <li><a href="pages/aboutus.html">About Us</a></li>
             <li><a href="pages/joinus.html">Join Us</a></li>
         </div>
-    </div>
-</nav>
-<a class="weatherwidget-io" href="https://forecast7.com/en/31d9535d93/amman/" data-label_1="AMMAN" data-label_2="Jordan"
-    data-font="Trebuchet MS" data-icons="Climacons Animated" data-theme="original" data-basecolor="rgb(40 133 170)"
-    data-cloudfill="#989898">AMMAN Jordan</a>
+    </nav>
 
-<body class="body-home">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/31d9535d93/amman/" data-label_1="AMMAN" data-label_2="Jordan"
+        data-font="Trebuchet MS" data-icons="Climacons Animated" data-theme="original" data-basecolor="rgb(40 133 170)"
+        data-cloudfill="#989898">AMMAN Jordan</a>
+
     <div class="brkLine"></div>
     <div class="holder">
         <div class="container">
-            <div class="content">
-                <a href="pages/shawrma.html" target="_blank">
+            <div class="content"id="shawarmaPage">
+                <a href="#render" >
                     <div class="content-overlay"></div>
                     <img class="content-image" src="img/Shawerma-main.jpg">
                     <div class="content-details fadeIn-bottom">
@@ -45,8 +49,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="content">
-                <a href="pages/burger.html" target="_blank">
+            <div class="content" id="burgerPage">
+                <a href="#render">
                     <div class="content-overlay"></div>
                     <img class="content-image" src="img/burger-main.jpg">
                     <div class="content-details fadeIn-bottom">
@@ -59,8 +63,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="content">
-                <a href="pages/pizza.html" target="_blank">
+            <div class="content" id="pizzaPage">
+                <a href="#render">
                     <div class="content-overlay"></div>
                     <img class="content-image" src="img/pizza-main.jpg">
                     <div class="content-details fadeIn-bottom">
@@ -73,8 +77,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="content">
-                <a href="pages/khaliji.html" target="_blank">
+            <div class="content" id="khaligiPage">
+                <a href="#render">
                     <div class="content-overlay"></div>
                     <img class="content-image" src="img/kahleeji-main.jpg">
                     <div class="content-details fadeIn-bottom">
@@ -88,8 +92,9 @@
     </div>
 
     <div class="brkLine"></div>
-    <br>
-    <br>
+
+    <div id="render" class="row"></div>
+
     <footer class="footer">
         <h1 class="fTitle">Raitat</h1>
         <div class="footerIcons">
