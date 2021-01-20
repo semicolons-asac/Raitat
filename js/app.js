@@ -98,10 +98,11 @@ function checkAndRestore() {
 
     if (localStorage.length > 0) {
 
-        arrayBurger = JSON.parse(localStorage.getItem('burger'));
-        arrayShawarma = JSON.parse(localStorage.getItem('shawarma'));
-        arrayPizza = JSON.parse(localStorage.getItem('pizza'));
-        arrayKhaliji = JSON.parse(localStorage.getItem('khaligi'));
+        // arrayBurger = JSON.parse(localStorage.getItem('burger'));
+        // arrayShawarma = JSON.parse(localStorage.getItem('shawarma'));
+        // arrayPizza = JSON.parse(localStorage.getItem('pizza'));
+        // arrayKhaliji = JSON.parse(localStorage.getItem('khaligi'));
+        arrayofRest=JSON.parse(localStorage.getItem('rate'));
 
     }
 
@@ -210,9 +211,3 @@ getDiv.addEventListener('click', function (event){
 
 
 //Rate
-
-// 
-// 
-// https://www.w3.org/WAI/tutorials/forms/custom-controls/
-// 
-// 
