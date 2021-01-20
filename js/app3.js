@@ -29,7 +29,6 @@ var br=document.createElement('br');
     }
     rateRender.appendChild(br);
     rateRender.appendChild(rimg);
-
 }
 
 // 
