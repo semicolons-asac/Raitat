@@ -28,7 +28,9 @@ function topR(array) {
         rateRender.appendChild(img);
     }
     rateRender.appendChild(br);
+    if(topR.img){
     rateRender.appendChild(rimg);
+    }
 }
 
 // 
