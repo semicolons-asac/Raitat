@@ -6,7 +6,7 @@ a {text-decoration: none; color: white; }
    font-weight: bolder;
   }
   .nav-background{
-    background-image: url(./img/background9.jpg);
+    background-image: url(../img/background9.jpg);
     background-size: cover;
 
   }
