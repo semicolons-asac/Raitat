@@ -11,7 +11,7 @@ map.innerHTML = "<iframe src='" + last.location + " frameborder='0' style='borde
 
 
 var nameRender = document.getElementById("rImg");
-nameRender.src = "/img/" + last.img;
+nameRender.src = "../img/" + last.img;
 
 var rateRender = document.getElementById("rRate");
 if (last.totalstars) {
