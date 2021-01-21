@@ -15,7 +15,7 @@ function topR(array) {
     var rateRender = document.getElementById("renderTop");
     var name = document.createElement('h1');
     var rimg = document.createElement('img');
-    rimg.src = "/img/" + topR.img;
+    rimg.src = "../img/" + topR.img;
 
     name.textContent = topR.name;
     rateRender.appendChild(name);
@@ -23,7 +23,7 @@ function topR(array) {
     for (var j = 0; j < top; j++) {
         console.log("in");
         var img = document.createElement('img');
-        img.src = '/img/star.png';
+        img.src = '../img/star.png';
         img.style.width = '50px';
         rateRender.appendChild(img);
     }

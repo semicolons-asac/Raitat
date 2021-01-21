@@ -25,7 +25,7 @@ if (last.totalstars) {
 }
 var Form = document.getElementById('star_rating');
 Form.addEventListener('submit', function (event) {
-    event.preventDefault();
+    // event.preventDefault();
     if (localStorage.getItem("rate") != null) {
         arrayofRest = JSON.parse(localStorage.getItem('rate'));
     } var rating = parseInt(event.target.rating.value);
