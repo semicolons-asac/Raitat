@@ -5,132 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/map.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/map.css">
     <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/rate.css">
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Raitat</title>
 </head>
 <nav class="navBar">
     <img class="logo" src="../img/logo1.png">
-
     <div class="navContent">
-
         <li><a href="/index.html">Home</a></li>
         <li><a href="/pages/aboutus.html">About Us</a></li>
-        <li><a href="/pages/joinus.html">Join Us</a></li>
+        <li><a href="/pages/toprate.html">Top 10</a></li>
     </div>
 </nav>
 
 <body>
-    <div>
-    <!-- <div id="shawrmarender"></div> -->
-    <div id="renderhere1">
-        <div id="renderhere"></div>
-    </div>
+    <div class="luj">
+        <!-- <div id="shawrmarender"></div> -->
+        <div id="renderhere1">
+            <div id="renderhere"></div>
+        </div>
+        <img class="rat-img" id="rImg"></h1>
+        <div class="Rinfo">
 
-
-    <h1 id="rName"></h1>
-    <div id="rRate"></div>
-
-
-
-    <img id="rImg" width="200" height="200"></h1>
-    <!--  -->
-
-    <br><br><br><br>
-    <form action="#" id="star_rating">
-
-        <input value="1" id="star1" type="radio" name="rating" class="visuallyhidden" hidden>
-        <label for="star1">
-            <span class="visuallyhidden"></span>
-            <svg viewBox="0 0 512 512">
-                <path
-                    d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z">
-                </path>
-            </svg>
-        </label>
-
-        <input value="2" id="star2" type="radio" name="rating" class="visuallyhidden" hidden>
-        <label for="star2">
-            <span class="visuallyhidden"></span>
-            <svg viewBox="0 0 512 512">
-                <path
-                    d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z">
-                </path>
-            </svg>
-        </label>
-
-        <input value="3" id="star3" type="radio" name="rating" class="visuallyhidden" hidden>
-        <label for="star3">
-            <span class="visuallyhidden"></span>
-            <svg viewBox="0 0 512 512">
-                <path
-                    d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z">
-                </path>
-            </svg>
-        </label>
-
-        <input value="4" id="star4" type="radio" name="rating" class="visuallyhidden" hidden>
-        <label for="star4">
-            <span class="visuallyhidden"></span>
-            <svg viewBox="0 0 512 512">
-                <path
-                    d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z">
-                </path>
-            </svg>
-        </label>
-
-        <input value="5" id="star5" type="radio" name="rating" class="visuallyhidden" hidden>
-        <label for="star5">
-            <span class="visuallyhidden"></span>
-            <svg viewBox="0 0 512 512">
-                <path
-                    d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z">
-                </path>
-            </svg>
-        </label>
-
-        <button type="submit" class="btn-small visuallyhidden focusable">Rate</button>
-
-        <output></output>
-    </form>
-    <br><br><br><br>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get Directions </button>
-    <!-- map start -->
-    <div id="id01" class="modal">
-
-        <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                    title="Close Modal">&times;</span>
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
-
-            <div class="container1">
-                <div id="map">
-
-
+            <h1 id="rName" style="
+            font-family: system-ui;
+        "></h1>
+            <br>
+            <br>
+            <br>
+            <div class="bodyB">
+                <div class="share-button">
+                    <span style="
+                    font-family: system-ui;
+                    font-weight: bolder;
+                ">Current Rate</span>
+                    <div id="rRate"></div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <button class="button1" onclick="document.getElementById('id01').style.display='block'"
+                style="width: 210px;height: 55px;/* font-family: monospace; */font-weight: bold;font-family: system-ui;">Get
+                Directions </button>
+        </div>
 
-            <div class="container1" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                    class="cancelbtn">Cancel</button>
+        <!--  -->
+        <br><br><br><br>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+
+                </div>
+                <div class="container1">
+                    <div id="map">
+                    </div>
+                </div>
+                <div class="container1" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Close Map</button>
+                </div>
+            </form>
+        </div>
+        <!-- هون منبلش ناكل خرا -->
+        <form action="#" id="star_rating">
+            <div>
+                <div class="star-widget" style="
+                direction: rtl; background-color: black;">
+                    <input type="radio" name="rating" value="5" id="star5">
+                    <label for="star5" class="fas fa-star"></label>
+                    <input type="radio" name="rating" value="4" id="star4">
+                    <label for="star4" class="fas fa-star"></label>
+                    <input type="radio" name="rating" value="3" id="star3">
+                    <label for="star3" class="fas fa-star"></label>
+                    <input type="radio" name="rating" value="2" id="star2">
+                    <label for="star2" class="fas fa-star"></label>
+                    <input type="radio" name="rating" value="1" id="star1">
+                    <label for="star1" class="fas fa-star"></label>
+                    <div>
+                        <header style="
+                        font-family: 'Yusei Magic';
+                    "></header>
+                    </div>
+                    <div class="btn">
+                        <button class="buttonR" type="submit" class="btn-small visuallyhidden focusable">
+                            <span>Rate</span></button>
+                    </div>
+                </div>
+
+                <br>
+
+
 
             </div>
-        </form>
     </div>
-    <!-- map end -->
-
-
-</div>
-
-
+    </form>
+    </div>
     <br>
     <br>
     <footer class="footer">
@@ -156,7 +135,6 @@
                 }
             }
         </script>
-
     </footer>
 </body>
 

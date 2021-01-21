@@ -8,8 +8,220 @@
 .ras-img:hover{
   border-radius:50%;
 }
+
+.rat-img{
+  width: 266px;
+  height: 266px;
+  border-radius: 10%;
+  transition:all 0.5s ease;
+}
 .row {
     display: flex;
     width: 276px;
     padding: 6px;
+}
+/* new style */
+
+input{
+  appearance: none;
+}
+
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  /* float: right; */
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#star5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#star1:checked ~ div header:before{
+  content: "😠 I just hate it ";
+}
+#star2:checked ~ div header:before{
+  content: "😒 I don't like it ";
+}
+#star3:checked ~ div header:before{
+  content: "😄 It is awesome ";
+}
+#star4:checked ~ div header:before{
+  content: "😎 I just like it ";
+}
+#star5:checked ~ div header:before{
+  content: "😍 I just love it ";
+}
+
+
+div header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+div .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+div .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+div .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.textstyle2{
+  
+      /* left: 30%; */
+    /* width: fit-content; */
+    /* top: 52px; */
+    padding: 20px;
+    /* background-color: #c86565d4; */
+    color: black;
+    /* border-radius: 0 50px 0 20px; */
+    font-size: revert;
+    font-weight: bold;
+    font-family: system-ui;
+
+}
+
+.luj{
+  text-align: -webkit-center;
+}
+
+.buttonR {
+  border-radius: 4px;
+  background-color: #fd4;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonR span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonR span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonR:hover span {
+  padding-right: 25px;
+}
+
+.buttonR:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.bodyB{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.share-button {
+  widith: 280px;
+  height: 80px;
+  background: #dfe6e9;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.share-button:hover{
+  transform: scale(1.1);
+}
+.share-button span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2d3436;
+  color: #f1f1f1;
+  text-align: center;
+  line-height: 80px;
+  z-index: 999;
+  transition: .6s linear;
+  border-radius: 40px;
+ 
+}
+.share-button:hover span{
+  transform: translateX(-100%);
+  transition-delay: .3s;
+}
+.share-button a {
+  flex: 1;
+  font-size: 26px;
+  margin-right: 20px;
+  color: #2d3436;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: .3s linear;
+}
+.share-button:hover a {
+  opacity: 1;
+  transform: translateX(0);
+}
+.share-button a:nth-of-type(1){
+  transition-delay: 1s;
+}
+.share-button a:nth-of-type(2){
+  transition-delay: .8s;
+}
+.share-button a:nth-of-type(3){
+  transition-delay: .6s;
+}
+.share-button a:nth-of-type(4){
+  transition-delay: .4s;
+}
+
+.Rinfo{
+ 
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px;
 }
