@@ -21,7 +21,7 @@ function topR(array, idx) {
     }
     var name = document.createElement('h1');
     var rimg = document.createElement('img');
-    rimg.src = "/img/" + topR.img;
+    rimg.src = "../img/" + topR.img;
 
     name.textContent = topR.name;
     container.appendChild(name);
@@ -29,15 +29,16 @@ function topR(array, idx) {
     for (var j = 0; j < top; j++) {
         console.log("in");
         var img = document.createElement('img');
-        img.src = '/img/star.png';
+        img.src = '../img/star.png';
         img.style.width = '50px';
         container.appendChild(img);
     }
+
     container.appendChild(br);
     container.appendChild(rimg);
 
     rateRender.appendChild(container);
-}
+
 
 // 
 if (localStorage.getItem("rate") != null) {
